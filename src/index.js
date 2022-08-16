@@ -1,11 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import './css/index.css';
+import ReactOfflineStatus from './components/App';
+import { useOfflineStatus } from './hooks/useOfflineStatus';
 
-const ReactOfflineStatus = (props) => {
-  return '';
-};
-
-ReactOfflineStatus.propTypes = {};
+export { useOfflineStatus };
 
 export default ReactOfflineStatus;
