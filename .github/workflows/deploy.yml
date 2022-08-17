@@ -2,7 +2,7 @@ name: Deploy Demo to Github Pages
 
 on:
   push:
-    branches: [$default-branch]
+    branches: ['main']
 
   workflow_dispatch:
 
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: ${{ github.head_ref || github.run_id }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 defaults:
@@ -32,10 +32,9 @@ jobs:
           node-version: 16.x
 
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v1
 
-      - name: Cache dependencies
+      - name: Restore cache
         uses: actions/cache@v3
         with:
           path: |
