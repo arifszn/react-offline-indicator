@@ -1,9 +1,9 @@
 {
-  "name": "react-offline-status",
+  "name": "react-offline-detect",
   "version": "1.0.0",
   "description": "Offline/No internet helper for React.",
   "private": false,
-  "homepage": "https://github.com/arifszn/react-offline-status#readme",
+  "homepage": "https://github.com/arifszn/react-offline-detect#readme",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
   "typings": "./types/index.d.ts",
@@ -48,10 +48,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arifszn/react-offline-status.git"
+    "url": "https://github.com/arifszn/react-offline-detect.git"
   },
   "bugs": {
-    "url": "https://github.com/arifszn/react-offline-status/issues"
+    "url": "https://github.com/arifszn/react-offline-detect/issues"
   },
   "keywords": []
 }

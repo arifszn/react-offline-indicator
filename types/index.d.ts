@@ -1,14 +1,14 @@
-// Type definitions for React Offline Status
-// Project https://github.com/arifszn/react-offline-status
+// Type definitions for React Offline Detect
+// Project https://github.com/arifszn/react-offline-detect
 // Author: Ariful Alam <arifulalamszn@gmail.com>
 
 import { Component } from 'react';
 
-export interface ReactOfflineStatusProps {}
+export interface ReactOfflineDetectProps {}
 
-declare class ReactOfflineStatus extends Component<
-  ReactOfflineStatusProps,
+declare class ReactOfflineDetect extends Component<
+  ReactOfflineDetectProps,
   any
 > {}
 
-export default ReactOfflineStatus;
+export default ReactOfflineDetect;

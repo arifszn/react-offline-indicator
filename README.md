@@ -1,1 +1,1 @@
-## React Offline Status
+## React Offline Detect
