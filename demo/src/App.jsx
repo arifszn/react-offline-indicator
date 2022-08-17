@@ -1,5 +1,5 @@
+import ReactOfflineStatus from '../../src';
 import './App.css';
-import ReactOfflineStatus from '../../src/components/App';
 
 function App() {
   return <ReactOfflineStatus>Online</ReactOfflineStatus>;
