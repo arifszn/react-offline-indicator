@@ -1,18 +1,26 @@
-name: Deploy to gh-pages Branch
+name: Deploy Demo to Github Pages
 
 on:
   push:
-    branches: [main]
+    branches: [$default-branch]
+
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
 
 defaults:
   run:
     working-directory: ./demo
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -23,18 +31,22 @@ jobs:
         with:
           node-version: 16.x
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v1
+
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Install dependencies for local component
+      - name: Install dependencies of local component
         run: npm ci
         working-directory: ./
 
-      - name: Install dependencies for demo
+      - name: Install dependencies of  demo
         run: npm ci
 
       - name: Build
@@ -42,8 +54,18 @@ jobs:
         env:
           CI: ''
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./demo/dist
+          path: ./demo/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
