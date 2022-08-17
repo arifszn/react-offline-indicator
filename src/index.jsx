@@ -10,20 +10,31 @@ const ReactOfflineStatus = ({ children }) => {
     children
   ) : (
     <React.Fragment>
-      <div class="modal modal-open">
-        <div class="modal-box p-0 rounded-none w-full max-w-full h-full max-h-full">
-          <div className="min-w-screen min-h-screen bg-base-200 flex items-center p-5 lg:p-10 overflow-hidden relative">
-            <div className="flex-1 min-h-full min-w-full rounded-3xl bg-base-100 shadow-xl p-5 lg:p-10 text-gray-800 relative md:flex items-center text-center md:text-left">
-              <div className="w-full">
-                <div className="mb-10 md:mb-20 mt-10 md:mt-20 text-gray-600 font-light">
-                  <h1 className="font-black text-center text-3xl lg:text-5xl text-primary mb-10">
-                    No internet!
-                  </h1>
+      <div className="modal modal-open">
+        <div className="modal-box p-0 rounded-none w-full max-w-full h-full max-h-full">
+          <div className="hero min-h-screen bg-base-200">
+            <div className="hero-content text-center">
+              <div className="max-w-md">
+                <div className="flex justify-center space-x-4 text-5xl font-bold">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    strokeWidth="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path d="M12 18c.714 0 1.37.25 1.886.666L12 21l-1.886-2.334A2.987 2.987 0 0 1 12 18zM2.808 1.393l17.677 17.678-1.414 1.414-5.18-5.18A5.994 5.994 0 0 0 12 15c-1.428 0-2.74.499-3.77 1.332l-1.256-1.556a7.963 7.963 0 0 1 4.622-1.766L9 10.414a10.969 10.969 0 0 0-3.912 2.029L3.83 10.887A12.984 12.984 0 0 1 7.416 8.83L5.132 6.545a16.009 16.009 0 0 0-3.185 2.007L.689 6.997c.915-.74 1.903-1.391 2.952-1.942L1.393 2.808l1.415-1.415zM14.5 10.285l-2.284-2.283L12 8c3.095 0 5.937 1.081 8.17 2.887l-1.258 1.556a10.96 10.96 0 0 0-4.412-2.158zM12 3c4.285 0 8.22 1.497 11.31 3.997l-1.257 1.555A15.933 15.933 0 0 0 12 5c-.878 0-1.74.07-2.58.207L7.725 3.51C9.094 3.177 10.527 3 12 3z"></path>
+                    </g>
+                  </svg>
+                  <span>No Internet</span>
                 </div>
+                <p className="py-6">You are not connected to the internet.</p>
               </div>
             </div>
-            <div className="w-64 md:w-96 h-96 md:h-full bg-accent bg-opacity-10 absolute -top-64 md:-top-96 right-20 md:right-32 rounded-full pointer-events-none -rotate-45 transform"></div>
-            <div className="w-96 h-full bg-secondary bg-opacity-10 absolute -bottom-96 right-64 rounded-full pointer-events-none -rotate-45 transform"></div>
           </div>
         </div>
       </div>
