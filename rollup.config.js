@@ -26,7 +26,16 @@ export default {
   plugins: [
     external('react', 'react-dom'),
     terser(),
-    postcss(),
+    postcss({
+      config: {
+        path: './postcss.config.js',
+      },
+      extensions: ['.css'],
+      minimize: true,
+      inject: {
+        insertAt: 'top',
+      },
+    }),
     babel({
       exclude: 'node_modules/**',
       extensions,
