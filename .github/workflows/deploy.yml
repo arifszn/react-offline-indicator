@@ -30,7 +30,11 @@ jobs:
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Install dependencies
+      - name: Install dependencies for local component
+        run: npm ci
+        working-directory: ./
+
+      - name: Install dependencies for demo
         run: npm ci
 
       - name: Build
