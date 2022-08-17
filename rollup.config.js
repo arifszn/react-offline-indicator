@@ -8,8 +8,10 @@ import visualizer from 'rollup-plugin-visualizer';
 import pkg from './package.json';
 import { terser } from 'rollup-plugin-terser';
 
+const extensions = ['.mjs', '.js', '.jsx', '.json', '.node'];
+
 export default {
-  input: './src/index.js',
+  input: './src/index.jsx',
   output: [
     {
       file: pkg.main,
@@ -27,8 +29,9 @@ export default {
     postcss(),
     babel({
       exclude: 'node_modules/**',
+      extensions,
     }),
-    resolve(),
+    resolve({ extensions }),
     commonjs(),
     image(),
     visualizer(),
