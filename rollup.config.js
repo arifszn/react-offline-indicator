@@ -24,7 +24,7 @@ export default {
     },
   ],
   plugins: [
-    external(),
+    external('react', 'react-dom'),
     terser(),
     postcss(),
     babel({
