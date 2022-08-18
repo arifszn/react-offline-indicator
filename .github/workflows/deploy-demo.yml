@@ -30,6 +30,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
+          cache: 'npm'
 
       - name: Setup Pages
         uses: actions/configure-pages@v1
@@ -48,10 +49,8 @@ jobs:
       - name: Install dependencies of  demo
         run: npm ci
 
-      - name: Build
+      - name: Build with vite
         run: npm run build
-        env:
-          CI: ''
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
