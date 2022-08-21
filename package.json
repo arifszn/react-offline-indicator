@@ -1,9 +1,9 @@
 {
-  "name": "react-offline-detect",
+  "name": "react-offline-indicator",
   "version": "1.0.0",
-  "description": "Offline/No internet helper for React.",
+  "description": "Offline detector and indicator for your react app.",
   "private": false,
-  "homepage": "https://github.com/arifszn/react-offline-detect#readme",
+  "homepage": "https://github.com/arifszn/react-offline-indicator#readme",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
   "typings": "./types/index.d.ts",
@@ -48,10 +48,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arifszn/react-offline-detect.git"
+    "url": "https://github.com/arifszn/react-offline-indicator.git"
   },
   "bugs": {
-    "url": "https://github.com/arifszn/react-offline-detect/issues"
+    "url": "https://github.com/arifszn/react-offline-indicator/issues"
   },
   "keywords": []
 }

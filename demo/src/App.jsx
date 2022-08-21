@@ -1,8 +1,8 @@
-import ReactOfflineDetect from '../../src';
+import ReactOfflineIndicator from '../../src';
 import './App.css';
 
 function App() {
-  return <ReactOfflineDetect>Online</ReactOfflineDetect>;
+  return <ReactOfflineIndicator>Online</ReactOfflineIndicator>;
 }
 
 export default App;

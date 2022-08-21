@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useOfflineStatus } from './hooks/useOfflineStatus';
 import './css/index.css';
 
-const ReactOfflineDetect = ({ children }) => {
+const ReactOfflineIndicator = ({ children }) => {
   const isOffline = useOfflineStatus();
 
   return !isOffline ? (
@@ -42,8 +42,8 @@ const ReactOfflineDetect = ({ children }) => {
   );
 };
 
-ReactOfflineDetect.propTypes = {
+ReactOfflineIndicator.propTypes = {
   children: PropTypes.node,
 };
 
-export default ReactOfflineDetect;
+export default ReactOfflineIndicator;
