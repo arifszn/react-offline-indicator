@@ -81,7 +81,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 ```
 
-<!-- A hook `useOfflineStatus` is also available which returns boolean. -->
+A hook `useOfflineStatus` indicating offline status is also available.
+
+```jsx
+import { useOfflineStatus } from 'react-offline-indicator';
+
+function App() {
+  const isOffline = useOfflineStatus();
+
+  return isOffline ? 'Offline' : 'Online';
+}
+```
 
 ## Support
 
