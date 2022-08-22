@@ -31,7 +31,11 @@ const ping = (url, timeout) => {
 };
 
 export const useOfflineStatus = () => {
-  const [offlineStatus, setOfflineStatus] = React.useState(!navigator.onLine);
+  const [offlineStatus, setOfflineStatus] = React.useState(
+    typeof navigator !== 'undefined' && typeof navigator.onLine === 'boolean'
+      ? !navigator.onLine
+      : false
+  );
 
   React.useEffect(() => {
     let intervalId = null;
@@ -44,7 +48,10 @@ export const useOfflineStatus = () => {
       setOfflineStatus(false);
     });
 
-    if (!hasBrowserCompatibility(navigator.userAgent)) {
+    if (
+      typeof navigator !== 'undefined' &&
+      !hasBrowserCompatibility(navigator.userAgent)
+    ) {
       intervalId = setInterval(async () => {
         const isOnline = await ping(PING_URL, TIMEOUT);
 
