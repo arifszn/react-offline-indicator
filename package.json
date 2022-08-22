@@ -53,6 +53,12 @@
   "bugs": {
     "url": "https://github.com/arifszn/react-offline-indicator/issues"
   },
+  "files": [
+    "dist",
+    "types",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [
     "react",
     "offline",
