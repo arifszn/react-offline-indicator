@@ -4,7 +4,7 @@ import { useOfflineStatus } from './hooks/useOfflineStatus';
 import './css/index.css';
 
 const ReactOfflineIndicator = ({ children }) => {
-  const isOffline = useOfflineStatus();
+  const isOffline = true;
 
   return !isOffline ? (
     children
@@ -15,7 +15,7 @@ const ReactOfflineIndicator = ({ children }) => {
           <div className="hero min-h-screen">
             <div className="hero-content text-center">
               <div className="max-w-md">
-                <div className="flex justify-center space-x-4 text-5xl font-bold">
+                <div className="flex space-x-4 text-3xl md:text-5xl font-bold">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -32,7 +32,9 @@ const ReactOfflineIndicator = ({ children }) => {
                   </svg>
                   <span>No Internet</span>
                 </div>
-                <p className="py-6">You are not connected to the internet.</p>
+                <p className="py-3 md:py-6 text-sm md:text-base">
+                  You are not connected to the internet.
+                </p>
               </div>
             </div>
           </div>
