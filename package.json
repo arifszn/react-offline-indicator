@@ -53,5 +53,27 @@
   "bugs": {
     "url": "https://github.com/arifszn/react-offline-indicator/issues"
   },
-  "keywords": []
+  "files": [
+    "dist",
+    "types",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "offline",
+    "online",
+    "react offline",
+    "react detect offline",
+    "react online detect",
+    "react online status",
+    "react offline status",
+    "react offline detect",
+    "react offline detector",
+    "react offline indicate",
+    "react offline indicator",
+    "detect",
+    "indicator",
+    "disconnect"
+  ]
 }
