@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/45073703/185791904-7180800a-f9fc-400c-a9c5-e989fd57ed63.png" width="50%">
 
-  <h4 align="center">⚡ Offline detector and indicator for your react app.</h4>
+  <h4 align="center">⚡ Offline detector and indicator for your React app.</h4>
 
   <p align="center">
     <a href="https://www.npmjs.com/package/react-offline-indicator">

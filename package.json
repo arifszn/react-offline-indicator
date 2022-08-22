@@ -1,7 +1,7 @@
 {
   "name": "react-offline-indicator",
   "version": "1.0.0",
-  "description": "Offline detector and indicator for your react app.",
+  "description": "Offline detector and indicator for your React app.",
   "private": false,
   "homepage": "https://github.com/arifszn/react-offline-indicator#readme",
   "main": "./dist/index.cjs.js",
