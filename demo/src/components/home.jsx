@@ -16,7 +16,7 @@ const Home = () => {
               <h2 className="mb-4 text-xl font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-5xl dark:text-white">
                 {`<React Offline Indicator />`}
               </h2>
-              <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+              <p className="mb-8 text-base font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
                 ⚡ Offline detector and indicator for your React app.
               </p>
               <div className="text-center mb-8 lg:mb-16">
