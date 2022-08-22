@@ -13,6 +13,9 @@
       <img src="https://img.shields.io/npm/dt/react-offline-indicator"/>
     </a>
     <img src="https://img.shields.io/bundlephobia/min/react-offline-indicator"/>
+    <a href="https://codeclimate.com/github/arifszn/react-offline-indicator/maintainability">
+      <img src="https://api.codeclimate.com/v1/badges/a9c2d734933f2f800dbc/maintainability" />
+    </a>
     <a href="https://github.com/arifszn/react-offline-indicator/issues">
       <img src="https://img.shields.io/github/issues/arifszn/react-offline-indicator"/>
     </a>
