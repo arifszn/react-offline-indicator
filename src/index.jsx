@@ -47,3 +47,5 @@ ReactOfflineIndicator.propTypes = {
 };
 
 export default ReactOfflineIndicator;
+
+export { useOfflineStatus };

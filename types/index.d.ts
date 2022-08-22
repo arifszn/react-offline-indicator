@@ -12,3 +12,10 @@ declare class ReactOfflineIndicator extends Component<
 > {}
 
 export default ReactOfflineIndicator;
+
+/**
+ * Hook indicating offline status.
+ */
+declare function useOfflineStatus(): boolean {};
+
+export { useOfflineStatus };
