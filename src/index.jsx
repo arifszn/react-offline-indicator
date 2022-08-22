@@ -12,7 +12,7 @@ const ReactOfflineIndicator = ({ children }) => {
     <React.Fragment>
       <div className="modal modal-open">
         <div className="modal-box p-0 rounded-none w-full max-w-full h-full max-h-full">
-          <div className="hero min-h-screen bg-base-200">
+          <div className="hero min-h-screen">
             <div className="hero-content text-center">
               <div className="max-w-md">
                 <div className="flex justify-center space-x-4 text-5xl font-bold">
