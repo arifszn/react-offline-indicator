@@ -4,7 +4,7 @@ const Home = () => {
       <div className="grid grid-cols-1 gap-6">
         <div>
           <section>
-            <div className="py-8 px-4 mx-auto text-center lg:py-16 lg:px-12">
+            <div className="py-16 px-4 mx-auto text-center lg:px-12">
               <div className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
                 <span className="text-xs bg-green-500 rounded-full text-white px-4 py-1.5 mr-3">
                   Online
@@ -43,8 +43,8 @@ const Home = () => {
               <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
                 <div className="text-left">
                   <div className="mockup-code">
-                    <pre data-prefix="$">
-                      <code>npm install react-offline-indicator</code>
+                    <pre data-prefix="$" className="text-xs md:text-base">
+                      <code>npm i react-offline-indicator</code>
                     </pre>
                   </div>
                 </div>
