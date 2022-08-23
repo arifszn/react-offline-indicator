@@ -58,6 +58,8 @@
 
 Just wrap your react components with `ReactOfflineIndicator`. When there is no internet connection, it will display offline page. When it comes back online, previous page will be restored.
 
+View [Demo](https://arifszn.github.io/react-offline-indicator).
+
 ## Installation
 
 Install via <a href="https://www.npmjs.com/package/react-offline-indicator">NPM</a>.
